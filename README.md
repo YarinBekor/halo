@@ -33,3 +33,9 @@ This folder is a local Git repository with an initial commit. Open it in your pr
 Edits here do not automatically update the hosted Site. Ask Codex to publish your edited files to the existing Pelmatech Site when ready.
 
 Current Site: https://pelmatech-health-companion-yb.tom-bekor.chatgpt.site
+
+## Integration visual preview
+
+Open `plugin-slot.html` for an alternate page that replaces the days card with an animated integration board. `index.html` remains unchanged.
+
+The illustration in `plugin-slot.html` and animation in `plugin-slot.css` are a custom implementation inspired by the supplied screenshot, not the licensed CodedVisuals source. No extra packages are required. The animation respects reduced-motion preferences. The Connected badge is illustrative, not a live integration status.

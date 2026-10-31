@@ -1,0 +1,41 @@
+/* Custom screenshot-inspired illustration; no CodedVisuals source is used. */
+.plugin-visual {
+  position:absolute;
+  top:13%;
+  right:0;
+  width:46%;
+  max-width:720px;
+  pointer-events:none;
+}
+.plugin-visual svg {
+  display:block;
+  width:100%;
+  overflow:visible;
+  filter:drop-shadow(0 24px 32px #063b4933);
+}
+.plugin-tile {
+  animation:plug-in 8s cubic-bezier(.22,.8,.3,1) infinite both;
+  animation-delay:var(--delay);
+}
+.connection-badge {
+  animation:connection-glow 8s ease-in-out infinite;
+}
+@keyframes plug-in {
+  0%,4% {transform:translateY(-85px);opacity:0;}
+  14% {transform:translateY(3px);opacity:1;}
+  18%,70% {transform:translateY(0);opacity:1;}
+  82%,100% {transform:translateY(0);opacity:0;}
+}
+@keyframes connection-glow {
+  0%,16%,95%,100% {opacity:.35;}
+  30%,80% {opacity:1;}
+}
+@media(max-width:700px) and (min-width:441px) {
+  .plugin-visual {top:36%;width:44%;}
+}
+@media(max-width:440px) {
+  .plugin-visual {top:44%;right:1%;width:98%;}
+}
+@media(prefers-reduced-motion:reduce) {
+  .plugin-tile,.connection-badge {animation:none;opacity:1;transform:none;}
+}
