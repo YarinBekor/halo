@@ -77,6 +77,18 @@ main {
   bottom:11%;
   transform:rotate(10deg);
 }
+/* Decorative globe uses the same #f43183 pink as the background. */
+.globe {
+  position:absolute;
+  width:clamp(380px,58vw,850px);
+  height:auto;
+  left:40%;
+  top:20%;
+  opacity:.82;
+  transform:rotate(-12deg);
+  pointer-events:none;
+  user-select:none;
+}
 .ribs {
   position:absolute;
   inset:0;
@@ -401,5 +413,14 @@ dialog input {
   }
   .location {
     font-size:10px;
+  }
+}
+
+@media(max-width:440px) {
+  .globe {
+    width:540px;
+    left:8%;
+    top:35%;
+    opacity:.65;
   }
 }
